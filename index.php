@@ -8,5 +8,8 @@ define('APP_DEBUG',true);
 //加载框架文件
 require(APP_PATH.'fastphp/Fastphp.php');
 
+//加载配置文件
+$config = require(app_.'config/config.php');
+
 //实例化框架
 (new fastphp\Fastphp($config))->run();
